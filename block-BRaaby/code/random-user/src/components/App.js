@@ -16,9 +16,9 @@ class App extends React.Component {
     .then((data) => this.setState({data}))
   }
 
-  handleClick = (person) => {
+  handleClick = () => {
     this.setState ({
-      data : {person}
+      data : this.componentDidMount()
     })
   }
 
@@ -38,7 +38,23 @@ class App extends React.Component {
                       <img className="image" src={person.picture.large} />
                   </div>
                   <div>
-                    <button onClick={() => this.handleClick(person)}>RANDOM USER</button>
+                    <h2 className="name_heading">My name is</h2>
+                    <h1 className="name">{person.name.first + person.name.last}</h1>
+                    <div className="email_div">
+                      <h2 className="name_heading">My Email is</h2>
+                      <h1 className="name">{person.email}</h1>
+                    </div>
+
+                  </div>
+                  <div className="icon_div">
+                     <span className="email_i"> <i class="fas fa-envelope"></i></span>
+                      <i class="fab fa-magento"></i>
+                      <i class="fas fa-map"></i>
+                      <i class="fas fa-phone"></i>
+                      <i class="fas fa-lock"></i>
+                  </div>
+                  <div>
+                    <button className="btn" onClick={this.handleClick}>RANDOM USER</button>
                   </div>
               </div>
             )
