@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 ol, ul {
   list-style: none;
@@ -50,11 +51,50 @@ table {
 /* Custom styles */
 
 .card {
-  border: 1px solid black;
   width: 30%;
   margin: 3rem auto;
   text-align: center;
+  padding: 5rem 1rem;
+  box-shadow: -2px -2px 6px rgba(128, 128, 128, 0.418), 2px 2px 6px rgba(128, 128, 128, 0.445);
 }
 .image {
    border-radius: 50%;
+   border: 5px solid rgb(92, 41, 140) ;
+}
+.btn {
+  font-size: 1.1rem;
+  padding: 0.5rem 0.8rem ;
+  cursor: pointer;
+  background-color: #549BE4;
+  color: #ffffff;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+}
+.icon_div i {
+  font-size: 1.8rem;
+  margin: 2rem;
+  color: rgb(46, 45, 45);
+  cursor: pointer;
+  
+}
+.name_heading {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.name {
+  font-size: 2rem;
+  margin-top: 0.7rem;
+  color: purple;
+}
+.email_div {
+  display: none;
+}
+.email_i{
+    padding: 1rem;
+  cursor: pointer;
+}
+
+.email_i:hover .email_div {
+  display: inline-block;
 }
