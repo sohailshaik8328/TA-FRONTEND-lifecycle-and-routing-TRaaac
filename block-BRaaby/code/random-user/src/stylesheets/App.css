@@ -1,0 +1,100 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom styles */
+
+.card {
+  width: 30%;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 5rem 1rem;
+  box-shadow: -2px -2px 6px rgba(128, 128, 128, 0.418), 2px 2px 6px rgba(128, 128, 128, 0.445);
+}
+.image {
+   border-radius: 50%;
+   border: 5px solid rgb(92, 41, 140) ;
+}
+.btn {
+  font-size: 1.1rem;
+  padding: 0.5rem 0.8rem ;
+  cursor: pointer;
+  background-color: #549BE4;
+  color: #ffffff;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+}
+.icon_div i {
+  font-size: 1.8rem;
+  margin: 2rem;
+  color: rgb(46, 45, 45);
+  cursor: pointer;
+  
+}
+.name_heading {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.name {
+  font-size: 2rem;
+  margin-top: 0.7rem;
+  color: purple;
+}
+.email_div {
+  display: none;
+}
+.email_i{
+    padding: 1rem;
+  cursor: pointer;
+}
+
+.email_i:hover .email_div {
+  display: inline-block;
+}
